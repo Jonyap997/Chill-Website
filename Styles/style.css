@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    overflow-x: hidden;
+    font-size: 20px;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    padding:2%;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 15px 20px;
+    margin: 0px 10px;
+    text-decoration: none;
+    background-color: white;
+}
+
+nav a:hover {
+    color:white;
+    background-color: black;
+}
+
+.index_background {
+    background-image: url(../Resources/Images/nabil-farook-1088584-unsplash.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45vw;
+}
+
+footer {
+    background-color: darkslategrey;
+    width: 100%
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.footer_container {
+    postion: relative;
+}
+
+.footer_left {
+    padding: 2%;
+}
+
+.footer_left ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.footer_left a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_left a:hover {
+    text-decoration: underline;
+}
