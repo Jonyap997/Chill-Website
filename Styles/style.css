@@ -7,7 +7,13 @@
 body {
     font-family: "Montserrat", "Arial", sans-serif;
     overflow-x: hidden;
+    overflow-y: hidden;
     font-size: 20px;
+    background-image: url(../Resources/Images/nabil-farook-1088584-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -26,6 +32,9 @@ p {
     display: block;
 }
 
+/*******
+*NAV BAR
+*******/
 nav ul{
     list-style-type: none;
     padding: 0;
@@ -44,25 +53,83 @@ nav a {
     padding: 15px 20px;
     margin: 0px 10px;
     text-decoration: none;
-    background-color: white;
+    background-color: none;
 }
 
 nav a:hover {
-    color:white;
-    background-color: black;
+    text-decoration: underline;
 }
 
-.index_background {
-    background-image: url(../Resources/Images/nabil-farook-1088584-unsplash.jpg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 45vw;
+.vertical_nav button{
+    position: absolute;
+    float: left;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: black;
+    padding: 24px 24px;
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: whitesmoke;
 }
 
+.vertical_nav button:hover{
+    text-decoration: underline;
+}
+
+.button1 button {
+     top: 50%; 
+}
+
+.button2 button{
+    top: 60%;
+}
+
+
+/***********
+* BACKGROUND
+***********/
+
+.background_container {
+    position: relative;
+}
+
+.title_text {
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:whitesmoke;
+    font-family: 'Zilla Slab Highlight', sans-serif;
+}
+
+.title_text h1 {
+        font-size: 5vw;
+}
+
+/*********
+*CONTENTS
+*********/
+
+.heading h1 {
+    text-align: center;
+    text-decoration: overline;  
+}
+
+.heading p {
+    text-align: center;
+    
+}
+
+/********
+* FOOTER
+********/
+/*
 footer {
-    background-color: darkslategrey;
+    background-color: none;
     width: 100%
     position: fixed;
     left: 0;
@@ -73,8 +140,22 @@ footer {
     postion: relative;
 }
 
+
 .footer_left {
     padding: 2%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: whitesmoke;
+}
+
+.footer_center {
+    padding: 2%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    color: whitesmoke;
 }
 
 .footer_left ul {
@@ -90,3 +171,4 @@ footer {
 .footer_left a:hover {
     text-decoration: underline;
 }
+*/
